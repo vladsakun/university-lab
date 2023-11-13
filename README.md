@@ -1,4 +1,4 @@
-# University Lab
+# Cover Letter
 
 This is a single-page website for a university lab, built with HTML, CSS, and JavaScript. It uses Bootstrap for responsive design, making it adaptable for mobile devices.
 
