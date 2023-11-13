@@ -1,24 +1,44 @@
+/* Головний блок сторінки з відображенням елементів у колонку, вирівнюванням по центру та центруванням відносно осі Y */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Стилі для верхньої частини сайту */
 .header {
-    background-color: #D1CECE;
+    background-color: #d1cece;
 }
 
+/* Контейнер заголовка */
 .header-container {
-    height: 30vh;
+    height: fit-content;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: initial;
 }
 
+/* Зображення профілю */
 .avatar {
-    height: calc(30vh - 40px);
     object-fit: cover;
+    margin-bottom: 20px;
+    aspect-ratio: 1/1;
 }
 
+/* Контейнер для імені.
+   Забезпечує відступи та колір фону. */
 .name-container {
     padding: 8px;
-    background-color: #514E4E;
+    background-color: #514e4e;
 }
 
+/* Стилі для елементу з класом "name". Встановлює колір тексту, шрифт, розмір, стиль та вагу тексту, а також міжрядковий інтервал. */
 .name {
-    color: #FFF;
+    color: #fff;
     font-family: Roboto;
     font-size: 32px;
     font-style: normal;
@@ -26,16 +46,22 @@
     line-height: normal;
 }
 
+/* Блок інформації */
 .info-block {
-    background-color: #D1CECE;
+    background-color: #d1cece;
     padding: 16px;
     padding-bottom: 48px;
 }
 
+/* Клас "info" використовується для стилізації блоку з інформацією. */
 .info {
     margin-bottom: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
+/* Заголовок інформації */
 .info-title {
     color: #000;
     font-family: Roboto;
@@ -45,6 +71,7 @@
     line-height: normal;
 }
 
+/* Стилі для вмісту інформації */
 .info-content {
     color: #000;
     font-family: Roboto;
@@ -52,20 +79,24 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    width: 100%;
+    overflow-wrap: anywhere;
 }
 
+/* Стилі для заголовку списку */
 .list-header {
-    text-decoration: underline;
-    color: #000;
-    font-family: Roboto;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    text-decoration: underline; /* Підкреслений текст */
+    color: #000; /* Чорний колір тексту */
+    font-family: Roboto; /* Шрифт Roboto */
+    font-size: 32px; /* Розмір шрифту 32 пікселі */
+    font-style: normal; /* Нормальний стиль шрифту */
+    font-weight: 800; /* Жирний шрифт */
+    line-height: normal; /* Нормальна висота рядка */
+    margin-top: 16px; /* Відступ зверху 16 пікселів */
+    margin-bottom: 16px; /* Відступ знизу 16 пікселів */
 }
 
+/* Стилі для тексту елементів списку */
 .list-item-text {
     color: black;
     font-size: 18px;
@@ -74,9 +105,20 @@
     word-wrap: break-word;
 }
 
+/* Головний контент */
 .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-left: 24px;
     padding-right: 24px;
     padding-top: 8px;
     padding-bottom: 48px;
+}
+
+/* Блок інформації для настільного вигляду */
+.info-block_desktop {
+    background-color: #D1CECE;
+    padding-top: 24px;
 }
